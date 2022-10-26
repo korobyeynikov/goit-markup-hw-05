@@ -633,9 +633,10 @@ body {
   height: 100%;
   opacity: 1;
   background-color: var(--backdrop-overlay);
-  transition: opacity var(--transition);
+  transition: opacity var(--transition), visibility var(--transition);
 }
 .backdrop.is-hidden {
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
